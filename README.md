@@ -1,7 +1,7 @@
-vagrantfile
+Vagrantfile
 -----------
 
-# Q & A
+### Q & A
 
 * Why use libvirt ?
 
@@ -11,7 +11,7 @@ Support Dnsmasq. We can easily connect to vm using `ssh ubuntu@HOSTNAME`
 
 I'm using vagrant for dev environment, and AWS Opsworks for prd environment. (Though AWS Opsworks actually using chef-zero, it's slow in local setup.)
 
-# Get Start (Ubuntu + Virtualbox)
+### Get Start (Ubuntu + Virtualbox)
 
 * add/check instances to/in layers `.layers.vagrant.yml`
 
@@ -43,21 +43,20 @@ vagrant up
 vagrant ssh bastion1
 ```
 
-# Get Start (Ubuntu + Libvirt)
+### Get Start (Ubuntu + Libvirt)
 
 * prepare vagrant libvirt box
 
-```
+```bash
 vagrant plugin install vagrant-mutate
 vagrant plugin install vagrant-libvirt
 wget https://cloud-images.ubuntu.com/vagrant/trusty/20150123/trusty-server-cloudimg-amd64-vagrant-disk1.box -O ubuntu-trusty64.box
 vagrant mutate ubuntu-trusty64.box libvirt
 ```
 
-
 * start
 
-```
+```bash
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 mkdir dev-vagrant
 cd dev-vagrant
@@ -68,7 +67,7 @@ vagrant ssh bastion1
 ssh ubuntu@dev-vagrant-bastion1
 ```
 
-# Configs
+### Configs
 
 * vagrant config at `.config.vagrant.yml`
 
