@@ -1,6 +1,6 @@
 {
     "name": "bastion",
-    "description": "OpsWorks recipe run-list for the Redis layer",
+    "description": "OpsWorks recipe run-list",
     "default_attributes": {
     },
     "run_list": [
