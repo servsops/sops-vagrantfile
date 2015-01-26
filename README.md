@@ -71,7 +71,7 @@ ssh ubuntu@dev-vagrant-bastion1
 
 * vagrant config at `.config.vagrant.yml`
 
-```
+```yml
 os: "ubuntu"
 
 # config.vm.provider: libvirt or virtualbox
