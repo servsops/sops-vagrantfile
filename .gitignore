@@ -1,0 +1,5 @@
+.vagrant/
+#cookbooks/
+*.lock
+
+.config.vagrant.yml

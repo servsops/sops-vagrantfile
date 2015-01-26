@@ -1,0 +1,16 @@
+os: "ubuntu"
+
+# config.vm.provider: libvirt or virtualbox
+provider: "libvirt"
+
+# config.vm.box: ubuntu-trusty64 or centos-7
+box:
+  ubuntu: "ubuntu-trusty64"
+  centos: "centos-7"
+
+scripts:
+  ubuntu: |
+    apt-get install curl -y
+  centos: |
+    which chef-solo || curl -L https://www.chef.io/chef/install.sh | sudo bash
+    #yum install -y epel-release-7-2 curl

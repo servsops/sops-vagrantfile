@@ -1,0 +1,6 @@
+bastion:
+  -
+    name: :bastion1
+    ip: "192.168.90.21"
+    cpus: 1
+    mem: 800 

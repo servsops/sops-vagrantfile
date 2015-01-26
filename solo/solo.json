@@ -1,0 +1,4 @@
+{
+  "name": "solo",
+  "run_list": [ "role[bastion]" ]
+}
